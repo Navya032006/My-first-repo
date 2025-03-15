@@ -1,0 +1,142 @@
+<div class="booking-page">
+  <div class="container">
+    <div class="booking-form-container" role="form" aria-labelledby="booking-form-title">
+      <h2 id="booking-form-title">Book Your Table</h2>
+      
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            aria-required="true"
+            aria-invalid="false"
+            data-testid="name-input"
+          />
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-required="true"
+              aria-invalid="false"
+              data-testid="email-input"
+            />
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(123) 456-7890"
+              aria-required="true"
+              aria-invalid="false"
+              data-testid="phone-input"
+            />
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              aria-required="true"
+              aria-invalid="false"
+              data-testid="date-input"
+            />
+          </div>
+          
+          <div class="form-group">
+            <label for="time">Time</label>
+            <select
+              id="time"
+              name="time"
+              aria-required="true"
+              aria-invalid="false"
+              data-testid="time-select"
+            >
+              <option value="">Select time</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+              <option value="22:00">22:00</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select
+              id="guests"
+              name="guests"
+              aria-label="Number of guests"
+              data-testid="guests-select"
+            >
+              <option value="1">1 person</option>
+              <option value="2" selected>2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6 people</option>
+              <option value="7">7 people</option>
+              <option value="8">8 people</option>
+              <option value="10">10 people</option>
+              <option value="12">12 people</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="occasion">Occasion (Optional)</label>
+            <select
+              id="occasion"
+              name="occasion"
+              aria-label="Special occasion"
+              data-testid="occasion-select"
+            >
+              <option value="">Select occasion</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="date">Date Night</option>
+              <option value="business">Business Meal</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="specialRequests">Special Requests (Optional)</label>
+          <textarea
+            id="specialRequests"
+            name="specialRequests"
+            rows="3"
+            placeholder="Allergies, dietary restrictions, seating preferences, etc."
+            aria-label="Special requests or accommodations"
+            data-testid="requests-textarea"
+          ></textarea>
+        </div>
+        
+        <button 
+          type="submit" 
+          class="btn btn-primary btn-submit"
+          aria-label="Submit reservation request"
+          data-testid="submit-button"
+        >
+          Book Now
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
